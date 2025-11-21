@@ -1,25 +1,25 @@
  <!-- favicon -->
  <link rel="shortcut icon" href="{{ get_fav($basic_settings) }}" type="image/x-icon">
  <!-- fontawesome css link -->
-<link rel="stylesheet" href="{{asset('public/frontend/assets/css/fontawesome-all.min.css')}}">
+<link rel="stylesheet" href="{{asset('frontend/assets/css/fontawesome-all.min.css')}}">
  <!-- line-awesome-icon css -->
- <link rel="stylesheet" href="{{ asset('public/frontend/assets/css/line-awesome.min.css') }}">
+ <link rel="stylesheet" href="{{ asset('frontend/assets/css/line-awesome.min.css') }}">
  <!-- bootstrap css link -->
- <link rel="stylesheet" href="{{ asset('public/frontend/assets/css/bootstrap.min.css') }}">
+ <link rel="stylesheet" href="{{ asset('frontend/assets/css/bootstrap.min.css') }}">
  <!-- swipper css link -->
- <link rel="stylesheet" href="{{ asset('public/frontend/assets/css/swiper.min.css') }}">
+ <link rel="stylesheet" href="{{ asset('frontend/assets/css/swiper.min.css') }}">
  <!-- lightcase css link -->
- <link rel="stylesheet" href="{{ asset('public/frontend/assets/css/lightcase.css') }}">
+ <link rel="stylesheet" href="{{ asset('frontend/assets/css/lightcase.css') }}">
  <!-- animate css link -->
- <link rel="stylesheet" href="{{ asset('public/frontend/assets/css/animate.css') }}">
+ <link rel="stylesheet" href="{{ asset('frontend/assets/css/animate.css') }}">
  <!-- animate css link -->
- <link rel="stylesheet" href="{{ asset('public/frontend/assets/css/player.css') }}">
+ <link rel="stylesheet" href="{{ asset('frontend/assets/css/player.css') }}">
   <!-- Nice Select css link -->
- <link rel="stylesheet" href="{{ asset('public/frontend/assets/css/nice-select.css') }}">
+ <link rel="stylesheet" href="{{ asset('frontend/assets/css/nice-select.css') }}">
    <!-- Popup  -->
- <link rel="stylesheet" href="{{ asset('public/backend/library/popup/magnific-popup.css') }}">
+ <link rel="stylesheet" href="{{ asset('backend/library/popup/magnific-popup.css') }}">
  <!-- style css link -->
- <link rel="stylesheet" href="{{ asset('public/frontend/assets/css/style.css') }}">
+ <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}">
 
 
  <style>

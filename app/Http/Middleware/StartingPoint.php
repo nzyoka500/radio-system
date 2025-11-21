@@ -20,30 +20,30 @@ class StartingPoint
      */
     public function handle(Request $request, Closure $next)
     {
-        if(env('PRODUCT_KEY', null)){
-            Config::set('starting-point.status',false);
-        }
+        // if(env('PRODUCT_KEY', null)){
+        //     Config::set('starting-point.status',false);
+        // }
 
-        $client_host = request()->getHttpHost();
-        $filter_host = preg_replace('/^www\./', '', $client_host);
+        // $client_host = request()->getHttpHost();
+        // $filter_host = preg_replace('/^www\./', '', $client_host);
 
-        try{
-            if(Schema::hasTable("script") && DB::table('script')->exists()) {
-                $script = DB::table('script')->first();
+        // try{
+        //     if(Schema::hasTable("script") && DB::table('script')->exists()) {
+        //         $script = DB::table('script')->first();
 
-                if($script && $filter_host != $script->client) {
-                    Config::set('starting-point.status',true);
-                    Config::set('starting-point.point','/project/install/welcome');
-                }
-            }
-        }catch(Exception $e) {
-            Config::set('starting-point.status',true);
-            Config::set('starting-point.point','/project/install/welcome');
-        }
+        //         if($script && $filter_host != $script->client) {
+        //             Config::set('starting-point.status',true);
+        //             Config::set('starting-point.point','/project/install/welcome');
+        //         }
+        //     }
+        // }catch(Exception $e) {
+        //     Config::set('starting-point.status',true);
+        //     Config::set('starting-point.point','/project/install/welcome');
+        // }
 
-        if(Config::get('starting-point.status') === true) {
-            return redirect(Config::get('starting-point.point'));
-        }
+        // if(Config::get('starting-point.status') === true) {
+        //     return redirect(Config::get('starting-point.point'));
+        // }
         return $next($request);
     }
 }

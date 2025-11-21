@@ -11,7 +11,7 @@ $menues = DB::table('setup_pages')
 <div class="main-side-menu">
     <div class="main-side-menu-logo-area">
         <div class="thumb-logo">
-            <img src="{{ asset('public/frontend/assets/images/logo/logo.png') }}" alt="logo">
+            <img src="{{ asset('frontend/assets/images/logo/logo.png') }}" alt="logo">
         </div>
         <span class="main-side-menu-cross"><i class="las la-times"></i></span>
     </div>
