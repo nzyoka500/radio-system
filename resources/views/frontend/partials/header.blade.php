@@ -66,7 +66,7 @@
                                 @else
                                 <a href="{{ setRoute('user.login') }}" class="account-area account-area-btn">
                                     <div class="account-thumb-area">
-                                        <img src="{{ asset('public/frontend/assets/images/user/account.png') }}" alt="account">
+                                        <img src="{{ asset('frontend/assets/images/user/account.png') }}" alt="account">
                                     </div>
                                     <span class="title">{{ __('Login') }}</span>
                                 </a>

@@ -28,7 +28,7 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Start Dashboard
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<div class="page-wrapper bg-overlay-base bg_img" data-background="{{ asset('public/frontend/images/element/banner-bg.jpg') }}">
+<div class="page-wrapper bg-overlay-base bg_img" data-background="{{ asset('frontend/images/element/banner-bg.jpg') }}">
 
     @include('user.partials.side-nav')
 
@@ -47,7 +47,7 @@
 
 
 @include('partials.footer-asset')
-<script src="{{ asset('public/frontend/js/apexcharts.min.js') }}"></script>
+<script src="{{ asset('frontend/js/apexcharts.min.js') }}"></script>
 
 @stack("script")
 

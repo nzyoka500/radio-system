@@ -51,8 +51,8 @@
                     <h4 class="widget-title">{{ __('DOWNLOAD APP') }}</h4>
                     <ul class="footer-list two">
                         <li><a href="javascript:void(0)">{{ __($appSettings->url_title) }}</a></li>
-                        <li><a href="{{ $appSettings->android_url }}" class="app-img"><img src="{{ asset('public/frontend/assets/images/app/app_btn1.png') }}" alt="app"></a></li>
-                        <li><a href="{{ $appSettings->iso_url }}" class="app-img"><img src="{{ asset('public/frontend/assets/images/app/app_btn2.png') }}" alt="app"></a></li>
+                        <li><a href="{{ $appSettings->android_url }}" class="app-img"><img src="{{ asset('frontend/assets/images/app/app_btn1.png') }}" alt="app"></a></li>
+                        <li><a href="{{ $appSettings->iso_url }}" class="app-img"><img src="{{ asset('frontend/assets/images/app/app_btn2.png') }}" alt="app"></a></li>
                     </ul>
                 </div>
             </div>
