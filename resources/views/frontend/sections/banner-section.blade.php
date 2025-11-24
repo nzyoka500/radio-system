@@ -19,7 +19,10 @@
                         <h1 class="title">{{ @$item->language->$lang->title ?? @$item->language->$default->title }}</h1>
                         <span class="sub-title">{{ @$item->language->$lang->description ?? @$item->language->$default->description }}</span>
                         <div class="banner-btn">
-                            <a href="{{ @$item->language->$lang->button_link ?? @$item->language->$default->button_link }}" class="btn--base"><i class="las la-eye"></i> {{ @$item->language->$lang->button_name ?? @$item->language->$default->button_name }}</a>
+                            <a href="{{ @$item->language->$lang->button_link ?? @$item->language->$default->button_link }}" class="btn--base">
+                                <i class="las la-eye"></i> 
+                                {{ @$item->language->$lang->button_name ?? @$item->language->$default->button_name }}
+                            </a>
                         </div>
                     </div>
                 </div>

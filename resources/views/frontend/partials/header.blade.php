@@ -14,8 +14,10 @@
             <div class="container-fluid">
                 <div class="header-menu-content">
                     <div class="logo-wrapper">
-                        <a class="site-logo site-title" href="{{setRoute('frontend.index')}}"><img src="{{ get_logo($basic_settings) }}"  data-white_img="{{ get_logo($basic_settings,'white') }}"
-                            alt="site-logo"></a>
+                        <a class="site-logo site-title" href="{{setRoute('frontend.index')}}">
+                            <img src="{{ get_logo($basic_settings) }}"  data-white_img="{{ get_logo($basic_settings,'white') }}"
+                            alt="bracefm-radio-logo">
+                        </a>
                         <button class="logo-btn"><i class="las la-bars"></i></button>
                     </div>
                     <div class="header-action">
