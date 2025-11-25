@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="{{ asset('backend/css/lightcase.css') }}">
 
    <!-- Fileholder CSS CDN -->
-   <link rel="stylesheet" href="https://appdevs.cloud/cdn/fileholder/v1.0/css/fileholder-style.css" type="text/css">
+   {{-- <link rel="stylesheet" href="https://appdevs.cloud/cdn/fileholder/v1.0/css/fileholder-style.css" type="text/css"> --}}
 
     <!-- main style css link -->
     <link rel="stylesheet" href="{{ asset('backend/css/style.css') }}">

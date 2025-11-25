@@ -14,10 +14,14 @@
             <div class="container-fluid">
                 <div class="header-menu-content">
                     <div class="logo-wrapper">
-                        <a class="site-logo site-title" href="{{setRoute('frontend.index')}}">
-                            <img src="{{ get_logo($basic_settings) }}"  data-white_img="{{ get_logo($basic_settings,'white') }}"
+                        <img src="{{ asset('frontend/assets/images/logo/logo-trans.png') }}" 
+     data-white_img="{{ get_logo($basic_settings,'white') }}"
+     alt="bracefm-radio-logo"
+     style="max-height: 60px; width: auto;">
+                        {{-- <a class="site-logo site-title" href="{{setRoute('frontend.index')}}">
+                            <img src="{{ asset('frontend/assets/images/logo/logo-trans.png') }}"  data-white_img="{{ get_logo($basic_settings,'white') }}"
                             alt="bracefm-radio-logo">
-                        </a>
+                        </a> --}}
                         <button class="logo-btn"><i class="las la-bars"></i></button>
                     </div>
                     <div class="header-action">
@@ -95,3 +99,50 @@
     </script>
 
 @endpush
+
+<style>
+    /* Logo Sizing */
+    .header .logo-wrapper .site-logo img {
+        max-height: 60px;
+        width: auto;
+        object-fit: contain;
+    }
+    
+    /* Hamburger Menu Styling */
+    .header .logo-btn {
+        background: #1DB9F2;
+        border: none;
+        color: #fff;
+        font-size: 24px;
+        padding: 10px 15px;
+        border-radius: 8px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+    
+    .header .logo-btn:hover {
+        background: transparent;
+        border: 2px solid #1DB9F2;
+        transform: scale(1.05);
+    }
+    
+    .header .logo-btn i {
+        color: #fff;
+        font-size: 24px;
+    }
+    
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+        .header .logo-wrapper .site-logo img {
+            max-height: 45px;
+        }
+        
+        .header .logo-btn {
+            font-size: 20px;
+            padding: 8px 12px;
+        }
+    }
+</style>

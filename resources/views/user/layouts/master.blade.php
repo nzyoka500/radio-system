@@ -18,8 +18,8 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Start Preloader
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-{{-- <div id="preloader"></div> --}}
-{{-- @include('frontend.partials.preloader') --}}
+<div id="preloader"></div>
+@include('frontend.partials.preloader')
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     End Preloader
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -28,7 +28,8 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Start Dashboard
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<div class="page-wrapper bg-overlay-base bg_img" data-background="{{ asset('frontend/images/element/banner-bg.jpg') }}">
+{{-- <div class="page-wrapper bg-overlay-base bg_img" data-background="{{ asset('frontend/images/element/banner-bg.jpg') }}"> --}}
+  <div class="page-wrapper bg-overlay-base bg_img" data-background="{{ asset('frontend/assets/images/banner/1.jpg') }}">
 
     @include('user.partials.side-nav')
 
