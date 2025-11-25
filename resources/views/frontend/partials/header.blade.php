@@ -164,7 +164,7 @@
    Header Styles
 ==================================== */
 .header {
-    background: #fff;
+    background: #1DB9F2;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
@@ -201,13 +201,13 @@
     background: transparent;
     /* border: 2px solid #1DB9F2; */
     padding: 10px;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    width: 45px;
-    height: 45px;
+    gap: 6px;
+    width: 60px;
+    height: 60px;
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease;
@@ -228,6 +228,7 @@
     background: linear-gradient(135deg, #1DB9F2 0%, #0EA5D9 100%);
     transform: translateY(-2px);
     box-shadow: 0 8px 16px rgba(29, 185, 242, 0.3);
+    border-radius: 10px;
 }
 
 .sidebar-toggle-btn:hover span {
@@ -251,7 +252,7 @@
     top: 0;
     width: 280px;
     height: 100vh;
-    background: #fff;
+    background: #f8f8f8ff;
     box-shadow: 2px 0 20px rgba(0,0,0,0.1);
     z-index: 1001;
     transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -450,6 +451,21 @@
 .sidebar-menu::-webkit-scrollbar-thumb:hover {
     background: #0EA5D9;
 }
+
+/* FIX LINE AWESOME ICON OVERRIDE */
+.las,
+.la,
+[class^="las "],
+[class*=" las "] {
+    font-family: "Line Awesome Free" !important;
+    font-weight: 900 !important;
+    font-style: normal; 
+     font-size: 20px;
+    color: #FF6B35;
+    transition: all 0.3s ease;
+}
+
+
 </style>
 
 @push('script')

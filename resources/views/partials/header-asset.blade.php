@@ -21,10 +21,21 @@
  <!-- style css link -->
  <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}">
 
+ <link rel="stylesheet" href="{{ asset('frontend/assets/css/line-awesome.min.css') }}">
+
+
+
+
 
  <style>
     :root {
         --primary-color: {{ $basic_settings->base_color }};
         --secondary-color: {{ $basic_settings->secondary_color }};
     }
+
+    i {
+    font-family: "Line Awesome Free" !important;
+    font-style: normal;
+    font-weight: 900;
+}
 </style>
