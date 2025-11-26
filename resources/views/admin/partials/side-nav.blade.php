@@ -1,9 +1,16 @@
 <div class="sidebar">
     <div class="sidebar-inner">
+
+
+        <!-- App Logo -->
         <div class="sidebar-logo">
             <a href="{{ setRoute('admin.dashboard') }}" class="sidebar-main-logo">
-                <img src="{{ get_logo($basic_settings) }}" data-white_img="{{ get_logo($basic_settings,'white') }}"
-                data-dark_img="{{ get_logo($basic_settings,'dark') }}" alt="logo">
+
+                {{-- <img src="{{ asset('frontend/assets/images/logo/logo-white.png') }}" data-white_img="{{ get_logo($basic_settings,'white') }}"
+                data-dark_img="{{ get_logo($basic_settings,'dark') }}" alt="Brace FM logo"> --}}
+
+
+                <img src="{{ asset('frontend/assets/images/logo/logo-white.png') }}" alt="Brace FM logo">
             </a>
             <button class="sidebar-menu-bar">
                 <i class="fas fa-exchange-alt"></i>
@@ -11,7 +18,7 @@
         </div>
         <div class="sidebar-user-area">
             <div class="sidebar-user-thumb">
-                <a href="{{ setRoute('admin.profile.index') }}"><img src="{{ get_image(Auth::user()->image,'admin-profile','profile') }}" alt="user"></a>
+                <a href="{{ setRoute('admin.profile.index') }}"><img src="{{ get_image(Auth::user()->image,'admin-profile','profile') }}" alt="user image"></a>
             </div>
             <div class="sidebar-user-content">
                 <h6 class="title">{{ Auth::user()->fullname }}</h6>

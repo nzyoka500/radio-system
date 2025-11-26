@@ -32,10 +32,4 @@
         --primary-color: {{ $basic_settings->base_color }};
         --secondary-color: {{ $basic_settings->secondary_color }};
     }
-
-    i {
-    font-family: "Line Awesome Free" !important;
-    font-style: normal;
-    font-weight: 900;
-}
 </style>

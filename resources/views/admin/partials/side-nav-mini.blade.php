@@ -1,28 +1,36 @@
 <div class="header mini-sidebar">
     <div class="header-top">
+
+        <!-- THEME SWITCHER BUTTON -->
         <div class="header-version-area header-btn">
             <button class="header-version-bar" title="Version">
                 <i class="las la-moon"></i>
             </button>
         </div>
+
+        <!-- SEARCH BUTTON/ INPUTR -->
         <div class="header-search-area header-btn">
             <button class="header-search-bar header-link" title="Search">
                 <i class="las la-search"></i>
             </button>
             <div class="header-search-wrapper">
                 <div class="position-relative">
-                    <input class="form-control sidebar-search-input" type="search" placeholder="Search . . . ." aria-label="Search">
+                    <input class="form-control sidebar-search-input" type="search" placeholder="Write your search here . . . ." aria-label="Search">
                     <span class="las la-search"></span>
                 </div>
                 <div class="sidebar-search-result p-3"></div>
             </div>
         </div>
+
+        <!-- FULLSCREEN BUTTON -->
         <div class="header-fullscreen-area header-btn">
             <button class="header-fullscreen-bar header-link" title="Fullscreen">
                 <i class="fullscreen-open las la-compress" onclick="openFullscreen();"></i>
                 <i class="fullscreen-close las la-compress-arrows-alt" onclick="closeFullscreen();"></i>
             </button>
         </div>
+
+        <!-- NOTIFICATION BUTTON -->
         <div class="header-notification-area header-btn">
             <button class="header-notification-bar header-link" title="Notification">
                 <i class="las la-bell"></i>
@@ -57,6 +65,9 @@
                 </div>
             </div>
         </div>
+
+
+        
         {{-- @if (admin_permission_by_name("admin.support.ticket.index"))
             <div class="header-support-area header-btn">
                 <button class="header-support-bar header-link" title="Support">

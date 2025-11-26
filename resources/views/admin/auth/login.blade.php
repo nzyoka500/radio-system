@@ -4,7 +4,10 @@
     <div class="account-wrapper">
         <div class="account-header">
             <div class="site-logo">
-                <img src="{{ get_logo($basic_settings) }}" alt="logo">
+                <!-- <img src="{{ get_logo($basic_settings) }}" alt="brace fm logo"> -->
+                {{-- <img src="{{ asset('assets/admin/images/logo.png') }}" alt="brace fm logo"> --}}
+                <img src="{{ asset('frontend/assets/images/logo/logo-white.png') }}" alt="brace fm logo">
+
             </div>
             <h6 class="sub-title">{{ __("Welcome To") }} <span>{{ __("Admin Panel") }}</span></h6>
         </div>
