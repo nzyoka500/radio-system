@@ -10,7 +10,12 @@
                 data-dark_img="{{ get_logo($basic_settings,'dark') }}" alt="Brace FM logo"> --}}
 
 
-                <img src="{{ asset('frontend/assets/images/logo/logo-white.png') }}" alt="Brace FM logo">
+                {{-- <img src="{{ asset('frontend/assets/images/logo/logo-white.png') }}" alt="Brace FM logo"> --}}
+
+                <img src="{{ asset('frontend/assets/images/logo/logo-white.png') }}"
+     alt="Brace FM logo"
+     style="height: 60px; width: auto; display:block; margin:10px auto;">
+
             </a>
             <button class="sidebar-menu-bar">
                 <i class="fas fa-exchange-alt"></i>
