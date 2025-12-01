@@ -1,0 +1,964 @@
+/*--------------------------------------------------------------
+# BRACE FM - CUSTOM BRAND COLORS
+# Primary: #1DB9F2 (Cyan Blue)
+# Secondary: #FFFFFF (White)
+# Accent: #000000 (Black)
+--------------------------------------------------------------*/
+
+/* CSS Variables - Update these for global color changes */
+:root {
+    --primary-color: #1DB9F2;
+    --secondary-color: #FFFFFF;
+    --accent-color: #000000;
+    --primary-rgb: 29, 185, 242;
+}
+
+/*--------------------------------------------------------------
+# Primary Color Overrides
+--------------------------------------------------------------*/
+
+/* Background Colors */
+.bg--primary {
+    background-color: #1DB9F2 !important;
+}
+
+.bg--base {
+    background-color: #1DB9F2 !important;
+}
+
+.bg--secondary {
+    background: linear-gradient(45deg, #f0f9ff, #e0f7ff);
+}
+
+/* Text Colors */
+.text--primary {
+    color: #1DB9F2 !important;
+}
+
+.text--secondary {
+    color: #1DB9F2 !important;
+}
+
+.text--base {
+    color: #1DB9F2 !important;
+}
+
+/* Border Colors */
+.border--secondary {
+    border: 1px solid #1DB9F2 !important;
+}
+
+.border--base {
+    border: 1px solid #1DB9F2 !important;
+}
+
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+
+.btn--base {
+    background: #1DB9F2;
+    color: #FFFFFF;
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+.btn--base:focus,
+.btn--base:hover {
+    color: #FFFFFF;
+    background: #15a0d6;
+    box-shadow: 0 10px 20px rgba(29, 185, 242, 0.4);
+}
+
+.btn--base.active {
+    background: #FFFFFF;
+    color: #1DB9F2;
+    box-shadow: 0px 10px 15px 0px rgba(29, 185, 242, 0.1);
+    border: 1px solid #e6e6e6;
+}
+
+/*--------------------------------------------------------------
+# Badges
+--------------------------------------------------------------*/
+
+.badge--base {
+    background-color: #1DB9F2;
+    color: #FFFFFF;
+}
+
+.badge--primary {
+    background-color: #1DB9F2;
+}
+
+/*--------------------------------------------------------------
+# Header & Navigation
+--------------------------------------------------------------*/
+
+.header-section.header-fixed {
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 30px rgba(29, 185, 242, 0.15);
+}
+
+.header-bottom-area {
+    background-color: #f9f9f9;
+}
+
+/* Navigation Links */
+.header-bottom-area .navbar-collapse .main-menu li a.active,
+.header-bottom-area .navbar-collapse .main-menu li a:hover {
+    color: #1DB9F2;
+}
+
+.header-bottom-area .navbar-collapse .main-menu li a.active::before,
+.header-bottom-area .navbar-collapse .main-menu li a:hover::before {
+    background: #1DB9F2;
+}
+
+.header-bottom-area .navbar-collapse .main-menu li a::before {
+    background: #1DB9F2;
+}
+
+/* Mobile Menu Toggle */
+.navbar-toggler span {
+    background-color: #1DB9F2;
+    color: #FFFFFF;
+}
+
+/* Logo Button */
+.logo-wrapper .logo-btn {
+    color: #1DB9F2;
+}
+
+/* Sub Menu */
+.header-bottom-area .navbar-collapse .main-menu li .sub-menu {
+    border-bottom: 3px solid #1DB9F2;
+}
+
+.header-bottom-area .navbar-collapse .main-menu li .sub-menu li:hover {
+    background-color: #1DB9F2;
+}
+
+.header-bottom-area .navbar-collapse .main-menu li .sub-menu li:hover a {
+    color: #FFFFFF;
+}
+
+.header-bottom-area .navbar-collapse .main-menu li .sub-menu li a.active {
+    color: #FFFFFF;
+    background-color: #1DB9F2;
+}
+
+/*--------------------------------------------------------------
+# Header Actions & Social
+--------------------------------------------------------------*/
+
+.header-link a i {
+    color: #1DB9F2;
+}
+
+.header-social li a:hover,
+.header-social li a.active {
+    background: #1DB9F2;
+    border: 1px solid #1DB9F2;
+    color: #FFFFFF;
+}
+
+.notify-btn-area span {
+    background-color: #f8473e;
+}
+
+/*--------------------------------------------------------------
+# Side Menu
+--------------------------------------------------------------*/
+
+.main-side-menu .main-side-menu-list li a i {
+    color: #1DB9F2;
+}
+
+.main-side-menu .main-side-menu-list li a:hover,
+.main-side-menu .main-side-menu-list li a.active {
+    color: #1DB9F2 !important;
+}
+
+.main-side-menu .main-side-menu-list li a:hover span i,
+.main-side-menu .main-side-menu-list li a.active span i {
+    color: #1DB9F2;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+
+.preloader {
+    background: #000000;
+}
+
+.loader-circle {
+    box-shadow: inset 0 0 0 1px rgba(29, 185, 242, 0.3);
+}
+
+.loader-line-mask .loader-line {
+    box-shadow: inset 0 0 0 1px rgba(29, 185, 242, 0.5);
+}
+
+/*--------------------------------------------------------------
+# Banner Section
+--------------------------------------------------------------*/
+
+.banner-section {
+    background: linear-gradient(135deg, #1DB9F2 0%, #15a0d6 100%);
+}
+
+.banner-section .banner-content .title,
+.banner-section .banner-content .sub-title {
+    color: #FFFFFF;
+}
+
+.banner-slider .slider-prev,
+.banner-slider .slider-next {
+    background-color: #1DB9F2;
+    color: #FFFFFF;
+}
+
+.banner-slider .slider-prev:hover,
+.banner-slider .slider-next:hover {
+    background-color: #15a0d6;
+}
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+
+.section-header .section-sub-titel {
+    color: #1DB9F2;
+}
+
+.section-header .section-sub-titel i {
+    color: #1DB9F2;
+}
+
+/*--------------------------------------------------------------
+# Next Show Section
+--------------------------------------------------------------*/
+
+.next-show-section .content-box {
+    background-color: #FFFFFF;
+    box-shadow: 0 16px 50px 0 rgba(29, 185, 242, 0.1);
+}
+
+.next-show-section .media .media-body .show-status {
+    background-color: #1DB9F2;
+    color: #FFFFFF;
+}
+
+.next-show-section .media .show-time .item-time {
+    color: #1DB9F2;
+}
+
+/*--------------------------------------------------------------
+# Schedule Items
+--------------------------------------------------------------*/
+
+.schedule-item {
+    background-color: #FFFFFF;
+    box-shadow: 0 16px 50px 0 rgba(29, 185, 242, 0.1);
+}
+
+.schedule-item .schedule-right-area .share-list li.fb {
+    color: #3b5998;
+}
+
+.schedule-item .schedule-right-area .share-list li.tr {
+    color: #1da1f2;
+}
+
+.schedule-item .schedule-right-area .share-list li.ln {
+    color: #0c63bc;
+}
+
+.schedule-item .schedule-right-area .share-list li.im {
+    color: #e1306c;
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+
+.about-section .about-widget-thumb::after {
+    background-color: #FFFFFF;
+}
+
+.about-section .about-content-area .section-header .section-sub-titel {
+    color: #1DB9F2;
+}
+
+.about-section .about-item-wrapper .about-content-item .icon-area {
+    background-color: #FFFFFF;
+    border: 1px solid #e0f7ff;
+    box-shadow: 0px 0px 0px 0px rgba(29, 185, 242, 0.12);
+}
+
+.about-section .about-item-wrapper .about-content-item .icon-area i {
+    color: #1DB9F2;
+}
+
+.about-section .about-item-wrapper .about-content-item .icon-area:hover {
+    background-color: #1DB9F2;
+}
+
+.about-section .about-item-wrapper .about-content-item .icon-area:hover i {
+    color: #FFFFFF;
+}
+
+.about-section .about-item-wrapper .about-content-item .icon-area.active {
+    background: #1DB9F2;
+}
+
+.about-section .about-item-wrapper .about-content-item .icon-area.active i {
+    color: #FFFFFF;
+}
+
+/*--------------------------------------------------------------
+# Video Section
+--------------------------------------------------------------*/
+
+.video-item .thumb-area .video-icon {
+    background-color: #1DB9F2;
+    color: #FFFFFF;
+}
+
+.video-item .thumb-area .video-icon::before {
+    background-color: #1DB9F2;
+}
+
+.video-item .content-area .title-area .sub-title {
+    color: #1DB9F2;
+}
+
+/*--------------------------------------------------------------
+# Gallery Section
+--------------------------------------------------------------*/
+
+.gallery-wrapper .gallery-item .gallery-thumb::before {
+    background-color: #000000;
+    opacity: 0.3;
+}
+
+/*--------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
+
+.team-thumb .team-social-area .team-social-list li a {
+    background-color: #1DB9F2;
+    color: #FFFFFF;
+}
+
+.team-thumb .team-social-area .team-social-list li a:hover {
+    background-color: #FFFFFF;
+    color: #1DB9F2;
+}
+
+.team-thumb .team-social-area .team-social-list li a.active {
+    background-color: #FFFFFF;
+    color: #1DB9F2;
+}
+
+.team-content {
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 15px 0px rgba(29, 185, 242, 0.1);
+}
+
+.team-content .sub-title {
+    color: #1DB9F2;
+}
+
+/*--------------------------------------------------------------
+# Testimonial Section
+--------------------------------------------------------------*/
+
+.testimonial-section {
+    background-color: #f0f9ff;
+}
+
+.testimonial-item {
+    background-color: #FFFFFF;
+    box-shadow: 2px 3.464px 10px 0px rgba(29, 185, 242, 0.25);
+}
+
+.testimonial-item .testimonial-icon-list li i {
+    color: #e4ab19;
+}
+
+.testimonial-item .testimonial-user-area .title-area p {
+    color: #1DB9F2;
+}
+
+/*--------------------------------------------------------------
+# Blog Section
+--------------------------------------------------------------*/
+
+.blog-section .blog-item {
+    box-shadow: 0 16px 50px 0 rgba(29, 185, 242, 0.1);
+}
+
+.blog-section .blog-item .blog-content .sub-title i {
+    color: #1DB9F2;
+}
+
+.blog-section .blog-item .blog-content .title a:hover {
+    color: #1DB9F2;
+}
+
+.blog-section .blog-item .blog-btn a {
+    color: #1DB9F2;
+}
+
+.blog-section .blog-item .blog-btn a:hover {
+    color: #000000;
+}
+
+.blog-list li::before {
+    background-color: #1DB9F2;
+}
+
+.blog-tag-wrapper .blog-footer-tag li {
+    background-color: #f0f9ff;
+}
+
+.blog-social-area .blog-social li {
+    background: #1DB9F2;
+}
+
+.widget-box .widget-title::before {
+    background-color: #1DB9F2;
+}
+
+.tag-widget-box .tag-list li:hover {
+    border: 1px solid #1DB9F2;
+    color: #1DB9F2;
+}
+
+.single-popular-item .popular-item-content .title a:hover {
+    color: #1DB9F2;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.footer-section {
+    background-color: #000000;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.footer-section::after {
+    background-image: linear-gradient(
+        270deg,
+        rgba(29, 185, 242, 0.05) 40%,
+        rgba(29, 185, 242, 0.05) 40%
+    );
+}
+
+.footer-logo .site-logo {
+    filter: brightness(0) invert(1);
+}
+
+.footer-content p {
+    color: #FFFFFF;
+}
+
+.footer-widget .widget-title {
+    color: #1DB9F2;
+}
+
+.footer-widget .footer-list li a {
+    color: #FFFFFF;
+}
+
+.footer-widget .footer-list li a:hover {
+    color: #1DB9F2;
+}
+
+.footer-widget input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+}
+
+.footer-widget input:focus {
+    border-color: #1DB9F2;
+}
+
+.footer-download .footer-download-btn a {
+    background: #1DB9F2;
+    color: #FFFFFF;
+    border: 1px solid #1DB9F2;
+}
+
+.footer-download .footer-download-btn a i {
+    color: #FFFFFF;
+}
+
+.footer-download .footer-download-btn a:hover {
+    background: #15a0d6;
+    box-shadow: 0px 12px 24px rgba(29, 185, 242, 0.4);
+}
+
+/*--------------------------------------------------------------
+# Social Area
+--------------------------------------------------------------*/
+
+.social-area {
+    background-color: #000000;
+}
+
+.social-area .social-wrapper .footer-social li a {
+    background-color: #1DB9F2;
+    border: 1px solid #1DB9F2;
+    color: #FFFFFF;
+}
+
+.social-area .social-wrapper .footer-social li a:hover {
+    color: #1DB9F2;
+    background-color: transparent;
+    border: 1px solid #1DB9F2;
+}
+
+/*--------------------------------------------------------------
+# Copyright Area
+--------------------------------------------------------------*/
+
+.copyright-area {
+    background-color: #000000;
+}
+
+.copyright-area .copyright-wrapper p {
+    color: #FFFFFF;
+}
+
+.copyright-area .copyright-wrapper .footer-social li a {
+    color: #FFFFFF;
+}
+
+.copyright-area .copyright-wrapper .footer-social li a:hover {
+    color: #1DB9F2;
+}
+
+.copyright-area .scroll-top a {
+    color: #FFFFFF;
+}
+
+.copyright-area .scroll-top a:hover {
+    color: #1DB9F2;
+}
+
+/*--------------------------------------------------------------
+# Call to Action
+--------------------------------------------------------------*/
+
+.call-to-action-section {
+    background-color: #1DB9F2;
+}
+
+.call-to-action-section .call-to-action-content .title {
+    color: #FFFFFF;
+}
+
+.call-to-action-section .call-to-action-content p {
+    color: #FFFFFF;
+}
+
+/*--------------------------------------------------------------
+# Forms & Inputs
+--------------------------------------------------------------*/
+
+.form--control:focus {
+    border: 1px solid #1DB9F2;
+}
+
+.custom-check-group input:checked + label::before {
+    background-color: #1DB9F2;
+    border: 1px solid #1DB9F2;
+}
+
+.form-control:focus {
+    border: 1px solid #1DB9F2;
+}
+
+.input-group input:focus {
+    border-color: #1DB9F2;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--single {
+    border-color: #1DB9F2;
+}
+
+.nice-select .list {
+    background-color: #f0f9ff;
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+
+.contact-form-area .form--control:focus {
+    border-color: #1DB9F2;
+    background-color: #FFFFFF;
+}
+
+.contact-widget .contact-item-list li .contact-item-icon {
+    background-color: #1DB9F2;
+    box-shadow: 0px 12px 24px rgba(29, 185, 242, 0.25);
+    color: #FFFFFF;
+}
+
+.contact-btn i {
+    color: #1DB9F2;
+}
+
+/*--------------------------------------------------------------
+# Account Section
+--------------------------------------------------------------*/
+
+.account-section .account-element {
+    background: linear-gradient(135deg, #1DB9F2 0%, #15a0d6 100%);
+}
+
+.account-wrapper {
+    box-shadow: 0 16px 50px 0 rgba(29, 185, 242, 0.1);
+}
+
+.account-form-area .form-group .show-pass {
+    color: #1DB9F2;
+}
+
+.account-form-btn a {
+    background-color: #f0f9ff;
+    color: #1DB9F2;
+}
+
+.account-form-btn a:hover {
+    background-color: #1DB9F2;
+    color: #FFFFFF;
+}
+
+.account-form-btn a:hover svg {
+    fill: #FFFFFF;
+}
+
+.account-form-btn a svg {
+    fill: #1DB9F2;
+}
+
+/*--------------------------------------------------------------
+# Custom Cards
+--------------------------------------------------------------*/
+
+.custom--card .card-header {
+    background: #1DB9F2;
+}
+
+.custom--card .card-header .card-title {
+    color: #FFFFFF;
+}
+
+.custom--card .card-body .card-form-wrapper input:focus,
+.custom--card .card-body .card-form-wrapper select:focus {
+    border: 1px solid #1DB9F2;
+}
+
+.uni-header {
+    background: rgba(29, 185, 242, 0.9);
+}
+
+.uni-header .uni-title {
+    color: #FFFFFF;
+}
+
+/*--------------------------------------------------------------
+# Tables
+--------------------------------------------------------------*/
+
+.custom-table thead tr {
+    background: #1DB9F2;
+}
+
+.custom-table thead tr th {
+    color: #FFFFFF;
+}
+
+.custom-table tbody tr {
+    background: #FFFFFF;
+    box-shadow: 0 5px 25px rgba(29, 185, 242, 0.1);
+}
+
+.table-area.two .custom-table thead tr th {
+    color: #1DB9F2;
+}
+
+/*--------------------------------------------------------------
+# Pagination
+--------------------------------------------------------------*/
+
+.pagination .page-item.active .page-link,
+.pagination .page-item:hover .page-link {
+    background-color: #1DB9F2;
+    border-color: transparent;
+    color: #FFFFFF;
+}
+
+/*--------------------------------------------------------------
+# Tabs
+--------------------------------------------------------------*/
+
+.nav-tabs .nav-link:hover {
+    background-color: #1DB9F2;
+    color: #FFFFFF;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #1DB9F2;
+    color: #FFFFFF;
+}
+
+/*--------------------------------------------------------------
+# Swiper Pagination
+--------------------------------------------------------------*/
+
+.swiper-pagination .swiper-pagination-bullet {
+    background-color: rgba(29, 185, 242, 0.2);
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #1DB9F2;
+}
+
+.slider-next,
+.slider-prev {
+    background-color: #FFFFFF;
+    color: #1DB9F2;
+}
+
+.slider-next:hover,
+.slider-prev:hover {
+    box-shadow: 0px 12px 24px rgba(29, 185, 242, 0.25);
+}
+
+/*--------------------------------------------------------------
+# Scroll to Top
+--------------------------------------------------------------*/
+
+.scrollToTop {
+    background: #1DB9F2;
+    color: #FFFFFF;
+}
+
+.scrollToTop:hover,
+.scrollToTop:focus {
+    color: #FFFFFF;
+}
+
+/*--------------------------------------------------------------
+# Animations & Effects
+--------------------------------------------------------------*/
+
+.bg-bubbles li {
+    background-color: #1DB9F2;
+}
+
+.animation-circle-inverse > span {
+    background: #1DB9F2;
+}
+
+@keyframes circleWater {
+    0% {
+        transform: scale(5.5);
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(8.5);
+        opacity: 0;
+    }
+}
+
+@keyframes ripple {
+    0%,
+    35% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(2);
+    }
+}
+
+/*--------------------------------------------------------------
+# Cookie Banner
+--------------------------------------------------------------*/
+
+.cookie-main-wrapper {
+    background-color: #000000;
+}
+
+.cookie-main-wrapper .cookie-content svg {
+    fill: #1DB9F2;
+}
+
+.cookie-main-wrapper .cookie-content p {
+    color: #FFFFFF;
+}
+
+.cookie-main-wrapper .cookie-btn-area button:hover {
+    background-color: #1DB9F2;
+}
+
+/*--------------------------------------------------------------
+# Profile Settings
+--------------------------------------------------------------*/
+
+.profile-settings-wrapper .preview-thumb.profile-wallpaper .avatar-preview .profilePicPreview {
+    background-color: #1DB9F2;
+}
+
+.profile-thumb-content .profile-content .username {
+    color: #FFFFFF;
+}
+
+.profile-thumb-content .profile-content .user-info-list li i {
+    color: #1DB9F2;
+}
+
+.profile-settings-wrapper .delete-profile-btn-area .delete-profile-btn i {
+    color: #f8473e;
+}
+
+.profile-settings-wrapper .delete-profile-btn-area .delete-profile-btn:hover {
+    background-color: #f8473e;
+    color: #FFFFFF;
+}
+
+/*--------------------------------------------------------------
+# Team Member Details
+--------------------------------------------------------------*/
+
+.team-member-details p {
+    color: #1DB9F2;
+}
+
+.team-member-social a {
+    background-color: #FFFFFF;
+    border: 1px solid #eee;
+}
+
+.team-member-social a:hover {
+    background-color: #1DB9F2;
+    border-color: #1DB9F2;
+}
+
+/*--------------------------------------------------------------
+# Schedule Details
+--------------------------------------------------------------*/
+
+.schedule-details-item {
+    background-color: #f9f9f9;
+}
+
+.schedule-details-content span {
+    color: #1DB9F2;
+}
+
+.schedule-details-links a {
+    background-color: #FFFFFF;
+    border: 1px solid #eee;
+}
+
+.schedule-details-links a:hover {
+    border-color: #1DB9F2;
+}
+
+.schedule-details-button a {
+    background-color: #1DB9F2;
+    color: #FFFFFF;
+}
+
+.schedule-details-button a:hover {
+    background-color: #15a0d6;
+}
+
+/*--------------------------------------------------------------
+# Selection Color
+--------------------------------------------------------------*/
+
+::-moz-selection {
+    background-color: #1DB9F2;
+    color: #FFFFFF;
+}
+
+::selection {
+    background-color: #1DB9F2;
+    color: #FFFFFF;
+}
+
+/*--------------------------------------------------------------
+# Scrollbar
+--------------------------------------------------------------*/
+
+html::-webkit-scrollbar {
+    background: #f1f1f1;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #1DB9F2;
+}
+
+html::-webkit-scrollbar-corner {
+    background: #1DB9F2;
+}
+
+/*--------------------------------------------------------------
+# Responsive Adjustments
+--------------------------------------------------------------*/
+
+@media only screen and (max-width: 991px) {
+    .banner-section {
+        background: linear-gradient(135deg, #1DB9F2 0%, #15a0d6 100%);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .profile-thumb-content .profile-content .username {
+        color: #000000;
+    }
+}
+
+/*--------------------------------------------------------------
+# Additional Hover Effects
+--------------------------------------------------------------*/
+
+a:hover {
+    color: #1DB9F2;
+}
+
+.btn:hover {
+    color: #FFFFFF;
+}
+
+/* Link Hover Colors */
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover {
+    color: #1DB9F2;
+}
+
+/*--------------------------------------------------------------
+# End of Brace FM Custom Colors
+--------------------------------------------------------------*/

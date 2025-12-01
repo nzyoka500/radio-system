@@ -21,7 +21,8 @@
  <!-- style css link -->
  <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}">
 
- <link rel="stylesheet" href="{{ asset('frontend/assets/css/line-awesome.min.css') }}">
+  <!-- brand codes - style css link -->
+ <link rel="stylesheet" href="{{ asset('frontend/assets/css/brand-styles.css') }}">
 
 
 
