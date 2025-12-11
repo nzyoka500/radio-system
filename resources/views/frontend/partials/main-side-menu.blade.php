@@ -13,7 +13,7 @@ $menues = DB::table('setup_pages')
         <div class="thumb-logo">
             <img src="{{ asset('frontend/assets/images/logo/logo-trans.png') }}" alt="logo">
         </div>
-        <span class="main-side-menu-cross"><i class="las la-times"></i></span>
+        {{-- <span class="main-side-menu-cross"><i class="las la-times"></i></span> --}}
     </div>
     <ul class="main-side-menu-list">
             @php

@@ -18,7 +18,7 @@
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30">
                 <div class="footer-widget">
                     <div class="footer-logo">
-                        <a class="site-logo site-title" href="{{setRoute('frontend.index')}}"><img src="{{ get_logo($basic_settings) }}"data-white_img="{{ get_logo($basic_settings,'white') }}" alt="site-logo"></a>
+                        <a class="site-logo site-title" href="{{setRoute('frontend.index')}}"><img src="{{ get_logo($basic_settings) }}"data-white_img="{{ get_logo($basic_settings,'white') }}" alt="bracefm logo"></a>
                     </div>
                     <div class="footer-content">
                         <p>{{@$footer->value->language->$lang->short_description ?? @$footer->value->language->$default->short_description }}</p>
@@ -51,8 +51,8 @@
                     <h4 class="widget-title">{{ __('DOWNLOAD APP') }}</h4>
                     <ul class="footer-list two">
                         <li><a href="javascript:void(0)">{{ __($appSettings->url_title) }}</a></li>
-                        <li><a href="{{ $appSettings->android_url }}" class="app-img"><img src="{{ asset('frontend/assets/images/app/app_btn1.png') }}" alt="app"></a></li>
-                        <li><a href="{{ $appSettings->iso_url }}" class="app-img"><img src="{{ asset('frontend/assets/images/app/app_btn2.png') }}" alt="app"></a></li>
+                        <li><a href="{{ $appSettings->android_url }}" class="app-img"><img src="{{ asset('frontend/assets/images/app/app_btn1.png') }}" alt="Android app"></a></li>
+                        <li><a href="{{ $appSettings->iso_url }}" class="app-img"><img src="{{ asset('frontend/assets/images/app/app_btn2.png') }}" alt="IOS app"></a></li>
                     </ul>
                 </div>
             </div>

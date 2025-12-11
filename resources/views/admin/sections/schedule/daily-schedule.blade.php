@@ -38,6 +38,7 @@
             <h6 class="title">{{ __($page_title) }}</h6>
         </div>
         <div class="card-body">
+            {{-- This form is for updating the section header/title --}}
             <form class="card-form" action="{{ setRoute('admin.schedule.section.update') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="row justify-content-center mb-10-none">
@@ -137,6 +138,7 @@
                             <th>{{ __("Live") }}</th>
                             <th>{{ __("Start Time") }}</th>
                             <th>{{ __("End Time") }}</th>
+                            <th>{{ __("Action") }}</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -168,7 +170,7 @@
                                 </td>
                             </tr>
                         @empty
-                            @include('admin.components.alerts.empty',['colspan' => 5])
+                            @include('admin.components.alerts.empty',['colspan' => 7])
                         @endforelse
                     </tbody>
                 </table>
@@ -185,7 +187,6 @@
     <script src="{{ asset('backend/js/fontawesome-iconpicker.js') }}"></script>
     <script>
         $(".input-field-generator .add-row-btn").click(function(){
-            // alert();
             setTimeout(() => {
                 $('.icp-auto').iconpicker();
             }, 500);
@@ -211,11 +212,13 @@
 
             openDeleteModal(actionRoute,target,message);
         });
+        
         $(document).ready(function(){
             // Switcher
             switcherAjax("{{ setRoute('admin.schedule.live.update') }}");
-
         });
-
     </script>
 @endpush
+
+
+

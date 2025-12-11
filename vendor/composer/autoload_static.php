@@ -834,6 +834,7 @@ class ComposerStaticInit7164bfd8f3adaf3fc5df980f5e68ff5d
         'App\\Http\\Controllers\\FileController' => __DIR__ . '/../..' . '/app/Http/Controllers/FileController.php',
         'App\\Http\\Controllers\\Frontend\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/Frontend/HomeController.php',
         'App\\Http\\Controllers\\GlobalController' => __DIR__ . '/../..' . '/app/Http/Controllers/GlobalController.php',
+        'App\\Http\\Controllers\\ScheduleController' => __DIR__ . '/../..' . '/app/Http/Controllers/ScheduleController.php',
         'App\\Http\\Controllers\\SubscriberController' => __DIR__ . '/../..' . '/app/Http/Controllers/SubscriberController.php',
         'App\\Http\\Controllers\\User\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/User/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\User\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/User/Auth/LoginController.php',

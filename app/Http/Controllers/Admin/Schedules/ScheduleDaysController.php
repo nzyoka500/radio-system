@@ -108,6 +108,8 @@ class ScheduleDaysController extends Controller
         $success = ['success' => [__('Day status updated successfully!')]];
         return Response::success($success,null,200);
     }
+
+    // Function to a Delete Day
     public function dayDelete(Request $request)
     {
         $validator = Validator::make($request->all(),[

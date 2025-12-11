@@ -3,6 +3,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\ScheduleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,4 +32,5 @@ Route::controller(HomeController::class)->name('frontend.')->group(function() {
     Route::post('contact/message/store', 'contactMessageStore')->name('contact.message.store');
     Route::post('subscribers/store', 'subscribersStore')->name('subscribers.store');
     Route::post('/language/switch', 'languageSwitch')->name('language.switch');
+    Route::get('/admin/schedule/store', [ScheduleController::class, 'store'])->name('admin.schedule.store');
 });

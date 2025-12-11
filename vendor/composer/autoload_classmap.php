@@ -57,6 +57,7 @@ return array(
     'App\\Http\\Controllers\\FileController' => $baseDir . '/app/Http/Controllers/FileController.php',
     'App\\Http\\Controllers\\Frontend\\HomeController' => $baseDir . '/app/Http/Controllers/Frontend/HomeController.php',
     'App\\Http\\Controllers\\GlobalController' => $baseDir . '/app/Http/Controllers/GlobalController.php',
+    'App\\Http\\Controllers\\ScheduleController' => $baseDir . '/app/Http/Controllers/ScheduleController.php',
     'App\\Http\\Controllers\\SubscriberController' => $baseDir . '/app/Http/Controllers/SubscriberController.php',
     'App\\Http\\Controllers\\User\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/User/Auth/ForgotPasswordController.php',
     'App\\Http\\Controllers\\User\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/User/Auth/LoginController.php',

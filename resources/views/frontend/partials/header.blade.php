@@ -16,7 +16,7 @@
                 <div class="header-menu-content">
                     <div class="logo-wrapper">
                         <a class="site-logo site-title" href="{{setRoute('frontend.index')}}">
-                            <img src="{{ asset('frontend/assets/images/logo/logo-trans.png') }}" 
+                            <img src="{{ asset('frontend/assets/images/logo/logo.png') }}" 
                                  data-white_img="{{ get_logo($basic_settings,'white') }}"
                                  alt="bracefm-radio-logo">
                         </a>
@@ -26,6 +26,49 @@
                             <span></span>
                         </button>
                     </div>
+                    
+                    <!-- Desktop Navigation -->
+                    <nav class="desktop-nav">
+                        <ul class="desktop-menu-list">
+                            <li class="{{ Request::routeIs('frontend.index') ? 'active' : '' }}">
+                                <a href="{{ setRoute('frontend.index') }}">
+                                    <!-- <i class="las la-home"></i> -->
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li class="{{ Request::routeIs('frontend.about') ? 'active' : '' }}">
+                                <a href="{{ setRoute('frontend.about') }}">
+                                    <!-- <i class="las la-info-circle"></i> -->
+                                    <span>About</span>
+                                </a>
+                            </li>
+                            <li class="{{ Request::routeIs('frontend.gallery') ? 'active' : '' }}">
+                                <a href="{{ setRoute('frontend.gallery') }}">
+                                    <!-- <i class="las la-images"></i> -->
+                                    <span>Gallery</span>
+                                </a>
+                            </li>
+                            <li class="{{ Request::routeIs('frontend.team') ? 'active' : '' }}">
+                                <a href="{{ setRoute('frontend.team') }}">
+                                    <!-- <i class="las la-users"></i> -->
+                                    <span>Team</span>
+                                </a>
+                            </li>
+                            <li class="{{ Request::routeIs('frontend.blog') ? 'active' : '' }}">
+                                <a href="{{ setRoute('frontend.blog') }}">
+                                    <!-- <i class="las la-blog"></i> -->
+                                    <span>Blog</span>
+                                </a>
+                            </li>
+                            <li class="{{ Request::routeIs('frontend.contact') ? 'active' : '' }}">
+                                <a href="{{ setRoute('frontend.contact') }}">
+                                    <!-- <i class="las la-envelope"></i> -->
+                                    <span>Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
                     <div class="header-action">
                         <div class="lan-swicth">
                             <select class="form--control nice-select" name="lang_switcher">
@@ -66,15 +109,12 @@
                             </div>
                             <a href="{{ setRoute('user.profile.index') }}" class="account-area account-area-btn">
                                 <div class="account-thumb-area">
-                                    <img src="{{ Auth::user()->user_image ?? asset('frontend/assets/images/user/account.png') }}" alt="account">
+                                    <img src="{{ Auth::user()->user_image ?? asset('assets/images/user/account.png') }}" alt="account">
                                 </div>
                                 <span class="title">{{ Auth::user()->username ?? ""}}</span>
                             </a>
                             @else
-                            <a href="{{ setRoute('user.login') }}" class="account-area account-area-btn">
-                                <div class="account-thumb-area">
-                                    <img src="{{ asset('frontend/assets/images/user/account.png') }}" alt="account">
-                                </div>
+                             <a href="{{ setRoute('user.login') }}" class="btn--base account-area account-area-btn">
                                 <span class="title">{{ __('Login') }}</span>
                             </a>
                             @endauth
@@ -90,7 +130,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Start Sidebar Navigation
+    Start Mobile Sidebar Navigation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div class="sidebar-overlay" id="sidebarOverlay"></div>
 <aside class="sidebar-menu" id="sidebarMenu">
@@ -156,7 +196,7 @@
     </nav>
 </aside>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    End Sidebar Navigation
+    End Mobile Sidebar Navigation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <style>
@@ -186,7 +226,7 @@
 }
 
 .logo-wrapper .site-logo img {
-    max-height: 50px;
+    max-height: 70px;
     width: auto;
     object-fit: contain;
     transition: transform 0.3s ease;
@@ -196,12 +236,11 @@
     transform: scale(1.05);
 }
 
-/* Hamburger Menu - Animated Bars */
+/* Hamburger Menu */
 .sidebar-toggle-btn {
-    background: transparent;
-    /* border: 2px solid #1DB9F2; */
+    /* background: transparent; */
+    background: #1DB9F2;;
     padding: 10px;
-    /* border-radius: 8px; */
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -219,20 +258,14 @@
     display: block;
     width: 22px;
     height: 2px;
-    background: #1DB9F2;
+    background: #fff;
     border-radius: 2px;
     transition: all 0.3s ease;
 }
 
 .sidebar-toggle-btn:hover {
-    background: linear-gradient(135deg, #1DB9F2 0%, #0EA5D9 100%);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(29, 185, 242, 0.3);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-}
-
-.sidebar-toggle-btn:hover span {
-    background: #fff;
 }
 
 .sidebar-toggle-btn:hover span:nth-child(1) {
@@ -244,7 +277,102 @@
 }
 
 /* ====================================
-   Sidebar Styles
+   Desktop Navigation (Large Screens)
+==================================== */
+.desktop-nav {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .desktop-nav {
+        display: block;
+        flex: 1;
+        margin: 0 40px;
+    }
+    
+    .sidebar-toggle-btn {
+        display: none;
+    }
+    
+    .desktop-menu-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .desktop-menu-list li a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 20px;
+        color: #1DB9F2;
+        /* color: red; */
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        position: relative;
+    }
+    
+    .desktop-menu-list li a i {
+        font-size: 18px;
+        transition: all 0.3s ease;
+    }
+    
+    .desktop-menu-list li a::before {
+        content: '';
+        position: absolute;
+        bottom: 8px;
+        left: 60%;
+        transform: translateX(-50%);
+        width: 0%;
+        height: 2px;
+        background: #fff;
+        background: linear-gradient(135deg, #1db9f2d3 5%, #0EA5D9 90%);
+        transition: width 0.3s ease;
+    }
+    
+    .desktop-menu-list li a:hover {
+        background: rgba(255, 255, 255, 0.15);
+        transform: translateY(-2px);
+    }
+    
+    .desktop-menu-list li a:hover i {
+        transform: scale(1.1);
+    }
+    
+    .desktop-menu-list li a:hover::before {
+        width: 60%;
+    }
+    
+    .desktop-menu-list li.active a {
+        background: rgba(255, 255, 255, 0.2);
+        font-weight: 600;
+    }
+    
+    .desktop-menu-list li.active a::before {
+        width: 22%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .desktop-menu-list {
+        gap: 10px;
+    }
+    
+    .desktop-menu-list li a {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+}
+
+/* ====================================
+   Mobile Sidebar Styles
 ==================================== */
 .sidebar-menu {
     position: fixed;
@@ -282,13 +410,14 @@
     border: none;
     font-size: 24px;
     color: #666;
+    color: red;
     cursor: pointer;
     padding: 5px;
     transition: all 0.3s ease;
 }
 
 .sidebar-close:hover {
-    color: #FF6B35;
+    color: #35d0ffff;
     transform: rotate(90deg);
 }
 
@@ -337,7 +466,7 @@
 
 .sidebar-menu-link i:first-child {
     font-size: 20px;
-    color: #FF6B35;
+    color: #1db9f2f1;
     transition: all 0.3s ease;
 }
 
@@ -404,14 +533,20 @@
 /* ====================================
    Responsive Design
 ==================================== */
+@media (max-width: 991px) {
+    .sidebar-toggle-btn {
+        display: flex;
+    }
+}
+
 @media (max-width: 768px) {
     .logo-wrapper .site-logo img {
-        max-height: 40px;
+        max-height: 50px;
     }
     
     .sidebar-toggle-btn {
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
     }
     
     .sidebar-toggle-btn span {
@@ -431,6 +566,10 @@
     
     .logo-wrapper {
         gap: 15px;
+    }
+    
+    .logo-wrapper .site-logo img {
+        max-height: 40px;
     }
 }
 
@@ -459,13 +598,8 @@
 [class*=" las "] {
     font-family: "Line Awesome Free" !important;
     font-weight: 900 !important;
-    font-style: normal; 
-     font-size: 20px;
-    color: #FF6B35;
-    transition: all 0.3s ease;
+    font-style: normal;
 }
-
-
 </style>
 
 @push('script')
@@ -478,7 +612,7 @@
         $("#local_submit").submit();
     });
     
-    // Sidebar Toggle Functionality
+    // Sidebar Toggle Functionality (Mobile Only)
     $(document).ready(function() {
         const sidebarToggle = $('#sidebarToggle');
         const sidebarMenu = $('#sidebarMenu');

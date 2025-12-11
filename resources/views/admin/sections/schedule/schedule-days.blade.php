@@ -61,12 +61,12 @@
 
 @push('script')
     <script>
-        // function keyPressCurrencyView(select) {
-        //     var selectedValue = $(select);
-        //     selectedValue.parents("form").find("input[name=code],input[name=currency_code]").keyup(function(){
-        //         selectedValue.parents("form").find(".selcted-currency").text($(this).val());
-        //     });
-        // }
+        function keyPressCurrencyView(select) {
+            var selectedValue = $(select);
+            selectedValue.parents("form").find("input[name=code],input[name=currency_code]").keyup(function(){
+                selectedValue.parents("form").find(".selcted-currency").text($(this).val());
+            });
+        }
 
         $(".delete-modal-button").click(function(){
             var oldData = JSON.parse($(this).parents("tr").attr("data-item"));
@@ -76,6 +76,6 @@
             openDeleteModal(actionRoute,target,message);
         });
 
-        // itemSearch($("input[name=category_search]"),$(".category-search-table"),"{{ setRoute('admin.setup.sections.category.search') }}",1);
+        itemSearch($("input[name=category_search]"),$(".category-search-table"),"{{ setRoute('admin.setup.sections.category.search') }}",1);
     </script>
 @endpush
